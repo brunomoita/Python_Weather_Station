@@ -1,0 +1,16 @@
+Create table [dbo].[Weather]
+           (Datetime datetime NOT NULL,
+           Temperature nvarchar(max) NULL,
+           Snow nvarchar(max) NULL,
+           SolarRadiation nvarchar(max) NULL,
+           UVIndex nvarchar(max) NULL,
+           Visulazation nvarchar(max) NULL,
+           Description nvarchar(max) NULL,
+           WindSpeed nvarchar(max) NULL,
+           Sunrise nvarchar(max) NULL,
+           Sunset nvarchar(max) NULL,
+           Precipitation nvarchar(max) NULL,
+           City nvarchar(max) NULL,
+           Country nvarchar(max) NULL,
+           Pressure nvarchar(max) NULL,
+           Wind_Direction nvarchar(max) NULL)
