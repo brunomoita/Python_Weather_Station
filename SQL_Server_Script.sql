@@ -13,4 +13,5 @@ Create table [dbo].[Weather]
            City nvarchar(max) NULL,
            Country nvarchar(max) NULL,
            Pressure nvarchar(max) NULL,
-           Wind_Direction nvarchar(max) NULL)
+           Wind_Direction nvarchar(max) NULL,
+           [FeelsLike] [nvarchar](max) NULL)
