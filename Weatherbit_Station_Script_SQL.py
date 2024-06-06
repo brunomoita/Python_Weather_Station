@@ -10,17 +10,17 @@ from json import loads
 WeatherBit_Key = '<Your WeatherBit_Key>'
 OpenWeather_Key = '<Your OpenWeather_Key>'
 
-#Latitude and Longitude for Toronto
+#City and Country
 
 city = 'Burlington'
 country = 'CA'
 
-# WeatherBit API URL with the API Key, Latitude and Longitude from variables
+# WeatherBit API URL with the API Key, City and Country from variables
 
 WeatherBit_url = "https://api.weatherbit.io/v2.0/current?&city={city}&country{country}&key={api_key}".format(api_key = WeatherBit_Key, city = city, country = country)
 OpenWeatherURL = "http://api.openweathermap.org/data/2.5/weather?q=Burlington,CA&appid={key}".format(key = OpenWeather_Key)
 
-#Make a API request using the full WeatherBit URL for Toronto
+#Make a API request using the full WeatherBit URL
 
 WeatherBitJson = requests.get(WeatherBit_url)
 OpenWeatherJson = requests.get(OpenWeatherURL)
